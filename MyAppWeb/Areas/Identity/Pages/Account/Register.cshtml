@@ -1,0 +1,35 @@
+﻿@page
+@model RegisterModel
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="login_parent">
+    <div class="login_left">
+        A smarter Hospital Towards More Accessable Care for All
+    </div>
+    <div class="login_right" id="signup_css">
+        <h3>Create your account</h3>
+        <i class="fa-solid fa-user"></i>
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <hr />
+            <div asp-validation-summary="ModelOnly" role="alert"></div>
+            <div>
+                <input asp-for="Input.Email" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <span asp-validation-for="Input.Email" ></span>
+            </div>
+            <div>
+                <input asp-for="Input.Password"  autocomplete="new-password" aria-required="true" placeholder="password" />
+                <span asp-validation-for="Input.Password" ></span>
+            </div>
+            <div>
+                <input asp-for="Input.ConfirmPassword"  autocomplete="new-password" aria-required="true" placeholder="password" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" >Register</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

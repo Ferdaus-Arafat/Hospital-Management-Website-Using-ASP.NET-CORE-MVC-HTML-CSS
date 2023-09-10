@@ -1,0 +1,342 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.bgimage {
+    background-image: url("../img/doctorbg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    margin: 0px;
+}
+
+header.header {
+    position: fixed;
+    z-index: 1;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 14px 10px 10px 200px;
+}
+
+span.logo {
+    content: url("../img/LOGO.png");
+    width: 40px;
+}
+
+.nav_left {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 18px 10px 17px 10px;
+}
+
+    .nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 17px 20px;
+    }
+
+        .nav a:link {
+            color: rgb(255, 255, 255);
+        }
+
+        .nav a:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .nav a:active {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+ul {
+    border-spacing: none;
+}
+
+li {
+    list-style: none;
+}
+
+.search {
+    text-align: left;
+    margin-right: 17px;
+    margin-left: 0px;
+}
+
+.login_parent {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 60px;
+    vertical-align: middle;
+    padding: 10px 0px;
+    margin-right: 77px;
+}
+
+    .login_parent div.login_left {
+        background-color: rgba(63, 93, 117, 0.322);
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+        margin-right: 0px;
+        margin-top: 0px;
+        padding: 86.5px 30px;
+        font-size: 83px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+.login_right {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 81px 50px;
+    margin-left: 6px;
+    color: white;
+}
+
+    .login_right form input {
+        background-color: transparent;
+        border: none;
+        color: white;
+        border-bottom: 2px solid white;
+        padding: 14px 0px 0px 85px;
+        font-size: 18px;
+    }
+
+    .login_right form button {
+        margin-top: 4px;
+        width: 100%;
+        display: block;
+        padding: 12px 24px;
+        color: white;
+        background-color: rgba(15, 15, 66, 0.603);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .login_right i {
+        font-size: 100px;
+        text-align: center;
+        padding: 0px 0px 0px 95px;
+    }
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 10px;
+}
+
+.login_right p a {
+    color: rgb(71, 255, 185);
+    text-decoration: none;
+}
+
+    .login_right p a:hover {
+        color: rgb(160, 104, 233);
+        ;
+        text-decoration: none;
+    }
+
+#signup_css {
+    padding-top: 80px;
+}
+
+#home1 {
+    padding-top: 150px;
+    padding-bottom: 140px;
+}
+
+#home_login_parent {
+    margin-right: 60px;
+}
+
+
+
+/*home later sections*/
+.home1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    margin: 0px 60px;
+    margin-top: 30px;
+}
+
+.doctor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0),black);
+    height: 375px;
+    width: 250px;
+    margin: 4px;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#docimage {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 30px;
+    border: 50%;
+}
+
+#doctortitle {
+    background-color: rgba(0, 0, 0, 0);
+    height: 375px;
+    width: 325px;
+    margin: 4px;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+#moredr {
+    width: 200px
+}
+
+.home1 .doctor:hover {
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 388px;
+    width: 250px;
+}
+
+.ambulance {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.644);
+    margin: 6px 60px 6px 60px;
+}
+
+#emergency {
+    padding-left: 50px;
+    padding-right: 100px;
+    font-size: 50px;
+    color: rgb(226, 39, 26);
+    -webkit-text-stroke: 0.4px white;
+}
+
+.ambulancepic {
+    height: 100px
+}
+
+.call {
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.664);
+    padding: 24px 90px;
+    padding-right: 111px;
+}
+
+
+.home2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgba(168, 136, 255, 0.356);
+    color: white;
+    margin: 0px 60px;
+    margin-top: 40px;
+}
+
+    .home2 .doctor2:hover {
+        background-color: rgba(189, 207, 255, 0.808);
+        height: 388px;
+        width: 250px;
+    }
+
+.doctor2 {
+    background-image: linear-gradient(rgba(168, 136, 255, 0),rgb(195, 204, 255));
+    height: 375px;
+    width: 250px;
+    margin: 4px;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-mid {
+    width: 250px;
+    padding: 10px;
+}
+
+.about-hospital-pic {
+    content: url("../img/hospital1.jpeg");
+    width: 90%;
+    margin: 20px 60px 10px 60px;
+}
+
+.about-text {
+    background-color: rgba(236, 231, 255, 0.904);
+    margin: 5px 60px 15px 60px;
+    padding: 7px
+}
+
+.logout {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.loginf{
+    text-align:center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.contactc {
+    background-color: rgba(0, 0, 0, 0.795);
+    margin: 20px 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 20px;
+}
+
+.login_left form button {
+    margin-top: 4px;
+    width: 100%;
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    background-color: rgba(15, 15, 66, 0.603);
+    border: none;
+    border-radius: 5px;
+}
+
+ ::placeholder{
+    color: white;
+}

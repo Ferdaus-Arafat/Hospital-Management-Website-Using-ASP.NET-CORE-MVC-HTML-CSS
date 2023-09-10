@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="color: white; margin: 10px 60px 0px 60px; padding: 5px 5px 5px 25px; background-color: rgba(0, 0, 0, 0.89)">List of Doctors</h1>
+<div class="home1">
+     @foreach(var item in Model)
+     {
+          <div class="doctor">
+               <img src="~/img/@item.ImageURL" id="docimage">
+               <br><b>@item.Name</b><br>
+               @item.Post<br>
+               @item.Field<br>
+               @item.Degree
+          </div>
+     }
+</div>
+

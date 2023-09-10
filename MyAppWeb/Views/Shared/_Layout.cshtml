@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyAppWeb</title>
+@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+*@    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyAppWeb.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/8c5dc080b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bgimage"></div>
+    <header>
+        <nav class="header">
+            <h2>
+                <span class="logo"><</span>
+                Teligati Medical College & Hospital
+            </h2>
+            <ul class="nav">
+                <div class="nav_left">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="About">About TMCH</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a></li>
+                    <partial name="_LoginPartial" />
+                </div>
+                <form action="#"> 
+                        <input class="search" type="text" placeholder="Search">
+                </form>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <h5>Teligati Medical College & Hospital</h5>
+            plot 12, Road 23, Teligati<br>
+            Khulna 2313, Bangladesh<br><br>
+
+            <h5>KHULNA INFO CENTER</h5>
+            plot 23, New Market Road<br>
+            KHULNA<br>
+            Cell: 01813 00 43 99<br><br>
+
+            This website is for information<br>
+            purpose and not intended as medical<br>
+            advice or a substitude of a<br>
+            consultation with a professional<br>
+            healthcare provider
+        </div>
+        <div>
+            <a href="https://goo.gl/maps/5g862M3yetmEDxfX6" target="_blank"><img class="footer-mid" src="~/img/map.png"></i></a>
+        </div>
+        <div>
+            <h5>APPOINTMENT PHONE NUMBER:</h5>
+            10445<br>
+            08 54 55 53 990<br><br>
+            <h5>EMERGENCY?</h5>
+            +880 1914 001234<br><br>
+            <h5>SOCIALS</h5>
+            <a href="#" style="color: rgb(91, 89, 221);"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;
+            <a href="#" style="color: rgb(221, 89, 89);"><i class="fa-brands fa-square-google-plus"></i></a>&nbsp;&nbsp;
+            <a href="#" style="color: rgb(89, 217, 221);"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
